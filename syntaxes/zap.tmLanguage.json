@@ -1,0 +1,128 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "zap",
+    "patterns": [
+        {
+            "name": "comment.line.zap",
+            "match": "--.*$"
+        },
+        {
+            "name": "keyword.control.zap",
+            "match": "\\b(opt|struct|event|funct)\\b"
+        },
+        {
+            "name": "entity.name.function.zap",
+            "match": "\\b(from|call|type|data|args|rets)\\b"
+        },
+        {
+            "name": "constant.language.zap",
+            "match": "\\b(Server|Client|Reliable|Unreliable|ManyAsync|ManySync|SingleAsync|SingleSync|server_output|client_output)\\b"
+        },
+        {
+            "name": "constant.numeric.zap",
+            "match": "\\b\\d+\\b"
+        },
+        {
+            "name": "constant.numeric.range.zap",
+            "match": "\\b\\d*\\.\\.\\d*|\\b\\d+"
+        },
+        {
+            "name": "storage.enum.zap",
+            "match": "\\b(i8|i16|i32|u8|u16|u32|f32|f64|string)\\b"
+        },
+        {
+            "name": "entity.name.enum.zap",
+            "match": "\\benum\\s+\\{[\\s\\S]*?\\}"
+        },
+        {
+            "name": "entity.name.map.zap",
+            "match": "\\bmap\\s+\\{[\\s\\S]*?\\}"
+        },
+        {
+            "name": "storage.type.array.zap",
+            "match": "\\[\\d*\\.\\.\\d*\\]"
+        },
+        {
+            "name": "storage.modifier.optional.zap",
+            "match": "\\?"
+        },
+        {
+            "name": "string.quoted.double.zap",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.zap",
+                    "match": "\\\\.\""
+                }
+            ]
+        },
+        {
+            "name": "entity.name.enum.unit.zap",
+            "begin": "\\benum\\s*\\{",
+            "end": "\\}",
+            "patterns": [
+                {
+                    "name": "constant.other.enum.zap",
+                    "match": "\\b[A-Za-z_][A-Za-z0-9_]*"
+                }
+            ]
+        },
+        {
+            "name": "entity.name.enum.tagged.zap",
+            "begin": "\\benum\\s+\"[A-Za-z_][A-Za-z0-9_]*\"\\s*\\{",
+            "end": "\\}",
+            "patterns": [
+                {
+                    "name": "entity.name.tag.zap",
+                    "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\s*\\{"
+                }
+            ]
+        },
+        {
+            "name": "entity.name.definition.option.zap",
+            "begin": "\\bopt\\s+[A-Za-z_][A-Za-z0-9_]*\\s*=",
+            "end": "\\}",
+            "patterns": [
+                {
+                    "name": "variable.other.option.zap",
+                    "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
+                }
+            ]
+        },
+        {
+            "name": "entity.name.definition.type.zap",
+            "begin": "\\btype\\s+[A-Za-z_][A-Za-z0-9_]*\\s*=",
+            "end": "\\}",
+            "patterns": [
+                {
+                    "name": "variable.other.type.zap",
+                    "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
+                }
+            ]
+        },
+        {
+            "name": "entity.name.definition.event.zap",
+            "begin": "\\bevent\\s+[A-Za-z_][A-Za-z0-9_]*\\s*=",
+            "end": "\\}",
+            "patterns": [
+                {
+                    "name": "variable.other.event.zap",
+                    "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
+                }
+            ]
+        },
+        {
+            "name": "entity.name.definition.funct.zap",
+            "begin": "\\bfunct\\s+[A-Za-z_][A-Za-z0-9_]*\\s*=",
+            "end": "\\}",
+            "patterns": [
+                {
+                    "name": "variable.other.funct.zap",
+                    "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b"
+                }
+            ]
+        }
+    ],
+    "scopeName": "source.zap"
+}

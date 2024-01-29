@@ -1,0 +1,43 @@
+node_modules
+*.vsix
+
+# Ignore the build output directory
+out/
+
+# Ignore system files
+.DS_Store # Mac system file
+Thumbs.db # Windows system file
+desktop.ini # Windows desktop configuration
+
+# Ignore user-specific VS Code settings
+.vscode/
+
+# Ignore logs
+*.log
+
+# Ignore npm debug logs and error logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore the environment configuration files
+.env
+.env.local
+
+# Ignore package-lock.json and yarn.lock in libraries
+package-lock.json
+yarn.lock
+
+# Ignore other potential sensitive files
+*.pem
+*.key
+
+# Ignore specific configuration files or folders that may contain credentials
+config.json
+
+# If using TypeScript, ignore the generated JavaScript files if they are output to the root (only if you're not using a build output directory like 'out/')
+*.js
+*.js.map
+
+# Ignore any local configuration files that might contain sensitive data
+.secret
