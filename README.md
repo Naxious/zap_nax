@@ -1,65 +1,45 @@
-# zap-nax
+# ZAP_NAX
 
-![NAXBLOX](/images/naxblox_logo_words.png)
+<!-- ![NAXBLOX](/images/naxblox_logo_words.png) -->
+![NAXBLOX](https://raw.githubusercontent.com/Naxious/zap_nax/images/naxblox_logo_words.png)
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This is my first attempt at an extension.
+I hope it will be useful to anyone working with the Roblox networking library called "ZAP".
 
-For example if there is an image subfolder under your extension project workspace:
+At the moment, it supports syntax highlighting for .zap files so when your making your config.zap it is easier to see.
+<!-- ![Highlights](/images/highlight_feature.png) -->
+~[Highlights](https://raw.githubusercontent.com/Naxious/zap_nax/images/highlight_feature.png)
 
-\!\[feature X\]\(images/feature-x.png\)
+It also supports some intellisense, albeit not perfect it prevents alot of back and forth to reading the API for ZAP.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+> Tip: Type "e" or "f" to see available args for event or funct as described on the ZAP API (<https://zap.redblox.dev/>).
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Dependencies:
+
+* `node`:  "^20.11.0"
+* `vscode`: "^1.85.0"
+* `typescript`: "^5.3.3"
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+None for now.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+Aside from eventually wanting to cleanup the intellisense not to sure atm.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+I hope anyone brave enough to venture into the awesome networking ZAP provides can find this extension useful!
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release of ZAP_NAX with syntax highlighting and basic intellisense functionality.
 
 ---
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
