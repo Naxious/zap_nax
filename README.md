@@ -11,6 +11,7 @@ I hope it will be useful to anyone working with the Roblox networking library ca
 At the moment, it supports syntax highlighting for .zap files so when your making your config.zap it is easier to see.
 <!-- ![Highlights](/images/highlight_feature.png) -->
 ![Highlights](https://raw.githubusercontent.com/Naxious/zap_nax/main/images/highlight_feature.png)
+![OptIntellisense](https://raw.githubusercontent.com/Naxious/zap_nax/main/images/opt_intellisense.png)
 
 It also supports some intellisense, albeit not perfect it prevents alot of back and forth to reading the API for ZAP.
 
